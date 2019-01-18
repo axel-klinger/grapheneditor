@@ -135,7 +135,23 @@ public class GraphenEditorLight extends JFrame
         opt.arbeitsVerzeichnis = pfad;
         return pfad + File.separator + dateiname;
     }
-    
+
+    private String chooseSaveFile() {
+    	String pfad = "";
+    	String dateiname = "";
+        JFileChooser chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new File(opt.arbeitsVerzeichnis));
+        if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
+        	pfad = chooser.getCurrentDirectory().getPath();
+            dateiname = chooser.getSelectedFile().getName();
+        }
+        if (pfad.equals("") || dateiname.equals(""))
+        	return "";
+        opt.arbeitsVerzeichnis = pfad;
+        System.out.println("FILE: " + dateiname);
+        return pfad + File.separator + dateiname;
+    }
+
     public void helpInfo() {
     	String s = "Steuerung\n\n";
     	s += "F1  Diese Hilfe\n";
@@ -215,15 +231,15 @@ public class GraphenEditorLight extends JFrame
 	    						&& !dateiSteuerung.dateiPfadName.equals("")) 
 	    	    				dateiSteuerung.dateiSpeichern(); 
 	    	    			else 
-	    	    				dateiSteuerung.dateiSpeichernAls(chooseFile());break;
-	    		case VK_U:	if ((s = chooseFile()) != null && !s.equals(""))
+	    	    				dateiSteuerung.dateiSpeichernAls(chooseSaveFile());break;
+	    		case VK_U:	if ((s = chooseSaveFile()) != null && !s.equals(""))
 	    						dateiSteuerung.dateiSpeichernAls(s);	break;
-	    		case VK_G:	if ((s = chooseFile()) != null && !s.equals(""))
+	    		case VK_G:	if ((s = chooseSaveFile()) != null && !s.equals(""))
 	    						dateiSteuerung.dateiExportierenSVG(s);	break;
 	    		case VK_X:	if (dateiSteuerung.dateiPfadName != null) 
 			    				dateiSteuerung.dateiExportierenJPG(aktuelleAnsicht.getSnapshot()); 
 			    			else
-			    				dateiSteuerung.dateiExportierenAlsJPG(aktuelleAnsicht.getSnapshot(),chooseFile());	break;
+			    				dateiSteuerung.dateiExportierenAlsJPG(aktuelleAnsicht.getSnapshot(),chooseSaveFile());	break;
 	    		case VK_H:	((GraphenDiagramm)ansicht[0]).setHintergrundBild(dateiSteuerung.dateiHintergrundLaden(chooseFile())); 
 	    					aktuelleAnsicht.repaint();					break;
 	    	}

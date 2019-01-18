@@ -44,9 +44,9 @@ public class GraphenModellEinAusgabe {	// ...Steuerung
 	    grafik.setAttribute("stroke", "black");
 	    grafik.setAttribute("stoke-width", "0.3cm");
 	    root.appendChild(grafik);
-/*	    
+
 	    // Alle Kanten
-	    for (Kante k : modell.alleKanten()) {
+	    for (KantenAnsicht k : modell.kantenMenge.values()) {
 	    	
 		    // Pfeile oder Linien...
 	    	Element kante = pfeil2element(k.form,doc);
@@ -70,7 +70,7 @@ public class GraphenModellEinAusgabe {	// ...Steuerung
 	    }
 	    
 	    // Alle Knoten
-	    for (Knoten k : modell.alleKnoten()) {
+	    for (KnotenAnsicht k : modell.knotenMenge.values()) {
 	    	
 	    	// KnotenForm
 	    	Element knoten =  shape2element(k.form, doc);
@@ -107,7 +107,6 @@ public class GraphenModellEinAusgabe {	// ...Steuerung
 	    	
 	    	grafik.appendChild(knoten);
 	    }
-	    	*/
 	    // Document speichern
 	    XML.saveDocument(doc, dateiname);
     }

@@ -12,12 +12,10 @@ Anforderung JDK 1.5+
 **Steuerung**
 
 	F1  Diese Hilfe
-	B   Beschriftung
 	C   Schwache Zusammenhangskomponenten
 	D   Struktureigenschaften
 	E   Kantendisjunkte Wege (a,b)
 	F   Fang
-	G   Gerichtete Kanten
 	I   Füllfarbe wählen (auswahl)
 	L   Linienfarbe wählen (auswahl)
 	N   Knotendisjunkte Wege (a,b)

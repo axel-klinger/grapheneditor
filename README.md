@@ -2,7 +2,7 @@
 
 Einfacher Editor für die Darstellung und Analyse von Graphen.
 
-![Beispiel](Beispiele/Hintergrund/screen.jpg)
+![Beispiel](Beispiele/Hintergrund/screen.png)
 
 Anforderung JDK 1.5+
 

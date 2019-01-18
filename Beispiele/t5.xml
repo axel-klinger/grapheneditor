@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<GraphenModell id="KnotenElement0" name="WURZEL">
-  <KnotenMenge id="km01"/>
-  <KantenMenge id1="km01" id2="km01">
-    <Kante k1="null" k2="null">
-      <Form b="10" h="15" typ="1"/>
-      <Farbe füllung="-16777216" linie="-16777216"/>
-    </Kante>
-    <Kante k1="null" k2="null">
-      <Form b="10" h="15" typ="1"/>
-      <Farbe füllung="-16777216" linie="-16777216"/>
-    </Kante>
-  </KantenMenge>
-  <Hierarchie id1="km01" id2="km01"/>
-</GraphenModell>
+<?xml version="1.0" encoding="UTF-8"?><GraphenModell id="KnotenElement0" name="WURZEL"><KnotenMenge id="km01"/><KantenMenge id1="km01" id2="km01"><Kante k1="null" k2="null"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="null" k2="null"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante></KantenMenge><Hierarchie id1="km01" id2="km01"/></GraphenModell>

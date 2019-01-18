@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Verkehrsnetz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/D:/Axel/Promotion/Sprache/Verkehrsnetz.xsd">
+    <Verkehrsknoten>
+        <Knoten id="001">
+            <x>100</x>
+            <y>100</y>
+        </Knoten>
+        <Knoten id="002">
+            <x>200</x>
+            <y>200</y>
+        </Knoten>
+    </Verkehrsknoten>
+    <Straßenabschnitte>
+        <Abschnitt>
+            <von>001</von>
+            <nach>002</nach>
+        </Abschnitt>
+    </Straßenabschnitte>
+</Verkehrsnetz>

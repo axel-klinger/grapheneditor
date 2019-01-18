@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- Ein leeres ProzessModell -->
+<ProzessModell>
+	<Aktivitäten>
+		<Aktivität id="a1">
+			<Name>Planen</Name>
+			<Dauer>5</Dauer>
+		</Aktivität>
+		<Aktivität id="a2">
+			<Name>Bauen</Name>
+			<Dauer>3</Dauer>
+		</Aktivität>
+		<Aktivität id="a3">
+			<Name>Bewirtschaften</Name>
+			<Dauer>10</Dauer>
+		</Aktivität>
+	</Aktivitäten>
+	<Zustände>
+		<Zustand id="z1">
+			<Name>Beginn</Name>
+			<Zeitpunkt>01.07.2005</Zeitpunkt>
+		</Zustand>
+		<Zustand id="z2">
+			<Name></Name>
+			<Zeitpunkt></Zeitpunkt>
+		</Zustand>
+		<Zustand id="z3">
+			<Name></Name>
+			<Zeitpunkt></Zeitpunkt>
+		</Zustand>
+		<Zustand id="z4">
+			<Name>Ende</Name>
+			<Zeitpunkt></Zeitpunkt>
+		</Zustand>
+	</Zustände>
+	<Personen>
+		<Person id="p1">
+			<Vorname>Arthur</Vorname>
+			<Nachname>Dent</Nachname>
+			<Anschrift>Irgendwo in England</Anschrift>
+		</Person>
+		<Person id="p2">
+			<Vorname>Zaphod</Vorname>
+			<Nachname>Beeblebrox</Nachname>
+			<Anschrift>Alpha Persi, hinten links</Anschrift>
+		</Person>
+		<Person id="p3">
+			<Vorname>Trillian</Vorname>
+			<Nachname>McMillian</Nachname>
+			<Anschrift>Irgendwo dazwischen</Anschrift>
+		</Person>
+	</Personen>
+	<Aktivitäten-Zustände>
+		<Aktivität-Zustand von="a1" nach="z2"/>
+		<Aktivität-Zustand von="a2" nach="z3"/>
+		<Aktivität-Zustand von="a3" nach="z4"/>
+	</Aktivitäten-Zustände>
+	<Zustände-Aktivitäten>
+		<Zustand-Aktivität von="z1" nach="a1"/>
+		<Zustand-Aktivität von="z2" nach="a2"/>
+		<Zustand-Aktivität von="z3" nach="a3"/>
+	</Zustände-Aktivitäten>
+	<Aktivitäten-Personen>
+		<Altivität-Person von="a1" nach="p1"/>
+		<Altivität-Person von="a2" nach="p3"/>
+		<Altivität-Person von="a3" nach="p3"/>
+	</Aktivitäten-Personen>
+</ProzessModell>

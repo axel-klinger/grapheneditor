@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<Klasse>
+	<Name>Person</Name>
+	<Attribute>
+		<Attribut>
+			<Name>Vorname</Name>
+			<Typ>String</Typ>
+		</Attribut>
+		<Attribut>
+			<Name>Nachname</Name>
+			<Typ>String</Typ>
+		</Attribut>
+		<Attribut>
+			<Name>Telefon</Name>
+			<Typ>String</Typ>
+		</Attribut>
+		<Attribut>
+			<Name>Email</Name>
+			<Typ>String</Typ>
+		</Attribut>
+	</Attribute>
+	<Ansichten>
+		<Ansicht>
+			<Name>Standard</Name>
+			<Figur>Dreieck</Figur>
+		</Ansicht>
+		<Ansicht>
+			<Name>Details</Name>
+			<Figur>
+				<Polygon>...</Polygon>
+				<Text posx="" posy="">Vorname</Text>
+			</Figur>
+		</Ansicht>
+	</Ansichten>
+</Klasse>

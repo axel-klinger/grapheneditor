@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jardesc>
+<jar path="D:/klinger/Werkzeuge/gedit.jar"/>
+<options buildIfNeeded="true" compress="true" descriptionLocation="/GraphenEditor/build.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" useSourceFolders="false"/>
+<manifest generateManifest="true" mainClassHandleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenEditor.java[GraphenEditor" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+<sealing sealJar="false">
+<packagesToSeal/>
+<packagesToUnSeal/>
+</sealing>
+</manifest>
+<selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.steuerung"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.dialoge"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.darstellung"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.darstellung.figuren"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen.hilfsmittel"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen.wege"/>
+</selectedElements>
+</jardesc>

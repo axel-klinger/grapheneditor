@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Verkehrsnetz>
+	<KnotenMenge typ="VerkehrsKnoten">
+		<Name> Verkehrsknoten </Name>
+		<Kurz> vk </Kurz>
+		<Geometrie>
+			<Form>   Kreis </Form>
+			<Farbe>  gelb </Farbe>
+			<Breite> 20 </Breite>
+			<Höhe>   20 </Höhe>
+		</Geometrie>
+	</KnotenMenge>
+	<KnotenMenge typ="StraßenAbschnitt">
+		<Name> Straßenabschnitte </Name>
+		<Kurz> sa </Kurz>
+		<Geometrie>
+			<Form>   Quadrat </Form>
+			<Farbe>  rot </Farbe>
+			<Breite> 20 </Breite>
+			<Höhe>   20 </Höhe>
+		</Geometrie>
+	</KnotenMenge>
+	
+	<!-- Struktur
+		
+		Definierte Relationen
+			VK-SA
+			SA-VK
+		Einschränkungen
+			VK(0,*)-(1,1)SA
+			SA(1,1)-(0,*)VK
+		-->
+</Verkehrsnetz>

@@ -1,0 +1,42 @@
+
+
+Ein paar Beispiele für
+
+
+1. Eigenschaften
+
+Position
+	x		INTEGER
+	y		INTEGER
+	z		INTEGER
+	einheit	STRING
+
+Länge
+	l		INTEGER
+	einheit	STRING
+
+Fläche
+	b		INTEGER
+	l		INTEGER
+	einheit	STRING
+
+Dauer
+	d		INTEGER
+	einheit	STRING
+
+
+
+2. Typen
+
+Aktivität
+	Name		TEXTZEILE
+	Beschreibung	TEXT
+	Start		ZEITPUNKT
+	Dauer		ZEIT
+
+Raum
+	Name		TEXTZEILE
+	Beschreibung	TEXT
+	Grundfläche	FLÄCHE
+	Höhe		LÄNGE
+	Position	POSITION

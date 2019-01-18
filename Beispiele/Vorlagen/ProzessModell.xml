@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+
+<!-- Die Modelldefinition -->
+
+<Modell>
+	<!-- Redundanz: Name vs. Dateiname -->
+	<Name>Prozessmodell</Name>
+	<Mengen>
+		<Menge>
+			<Name>Aktivitäten</Name>
+			<Typ>Aktivität</Typ>
+		</Menge>
+		<Menge>
+			<Name>Zustände</Name>
+			<Typ>Zustand</Typ>
+		</Menge>
+		<Menge>
+			<Name>Personen</Name>
+			<Typ>Person</Typ>
+		</Menge>
+		<Menge>
+			<Name>Rollen</Name>
+			<Typ>Rolle</Typ>
+		</Menge>
+		<Menge>
+			<Name>Komponenten</Name>
+			<Typ>Komponente</Typ>
+		</Menge>
+		<Menge>
+			<Name>Verbindungen</Name>
+			<Typ>Verbindung</Typ>
+		</Menge>
+		<Menge>
+			<Name>Aufgaben</Name>
+			<Typ>Aufgabe</Typ>
+		<Menge>
+	</Mengen>
+
+	<Relationen>
+		<!-- ist die Eindeutigkeit einer Relation gegeben durch von, aussage, nach? -->
+		<Relation>
+			<!-- <Name> wenn nicht angegeben, von-aussage-nach -->
+			<Von>Aktivitäten</Von>
+			<Aussage>führen zu</Aussage>
+			<Nach>Zustände</Nach>
+			
+			<!-- hier schon Eigenschaften? - nicht bei bipartit! -->
+			
+			<!-- Eindeutigkeit & Totalität | Kardinalitäten | beides -->
+			<!-- <Darstellung> gehört in eine Eigene Beschreibung -->
+			
+		</Relation>
+		<Relation>
+			<Von>Zustände</Von>
+			<Aussage>ermöglichen</Aussage>
+			<Nach>Aktivitäten</Nach>
+		</Relation>
+		<Relation>
+			<Von>Aktivitäten</Von>
+			<Aussage>werden ausgeführt von</Aussage>
+			<Nach>Personen</Nach>
+			<!-- Nach-Eindeutig (bzw. rechtseindeutig) -->
+		</Relation>
+		<Relation>
+			<Aussage> </Aussage>
+			<Von> </Von>
+			<Nach> </Nach>
+		</Relation>
+
+		<Relation>
+			<Aussage> </Aussage>
+			<Von> </Von>
+			<Nach> </Nach>
+		</Relation>
+
+
+		
+	</Relationen>
+	
+	<!-- Domänen oder Teilmodelle -->
+	
+	<!--	Domäne -> z.B. Prozessmodell !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!	-->
+	
+
+	
+	<Teilmodelle>
+		<Teilmodell>
+			<Name>Ein Netzplan</Name>
+			<Typ>VorgangsKnotenNetzplan</Typ>
+			<Parameter>
+				<Menge>
+					<Wert>Aktivitäten</Wert>
+					<Ansicht>Netzplan</Ansicht>	<!-- !?!?!?! -->
+				</Menge>
+				<Relation>
+					<Wert>A->T o T->A</Wert>	<!-- !?!?!?! -->
+				<Relation>
+				<Bewertung>
+					<Wert>Zeitplan</Wert>
+				</Bewertung>
+		</Teilmodell>
+	</Teilmodelle>
+	
+	<Bewertungen>
+		<Bewertung>
+			<Name>Zeitplan</Name>
+			<Abbildungen>
+				<Abbildung>
+					<Name>Ausführungszeiten</Name>
+					<Menge>Aktivitäten</Menge>
+					<Werte>
+						<Wert>
+							<Name>Dauer</Name>
+							<Inhalt>Aktivität.Dauer</Inhalt>
+						</Wert>
+						<Wert>
+							<Name>Frühest möglicher Anfang</Name>
+							<!-- Inhalt??? -->
+						</Wert>
+					</Werte>
+				</Abbildung>
+				<Abbildung>
+					<Name>Versatzzeiten</Name>
+					<Relation>A->Z o Z->A</Relation>
+					<Werte>
+						<Wert>
+							<Name>Dauer</Name>
+							<Inhalt>Zustand z aus Z | es gibt ein a aus A und ein b aus A, 
+													  so dass a-z aus A-Z und z-b aus Z-A war ist</Inhalt>
+								<!--  Achtung: u. U. nicht eindeutig!!! s. u. -->
+
+<!-- 	um multigraphen auf bewertete schlichte abzubilden, 
+		muss die eindeutigkeit einer kante auf von, nach, werte
+		erweitert werden, da sonst informationen verloren gingen	
+		-> dann hätten "bewertete schlichte" graphen aber wieder eine andere struktur als schlichte graphen!!!!???
+		... alternativ müsste eine operation definiert werden, die z.b. im fall a-1,1-b,a-2,2-b => a-b 
+		entscheidet, ob die werte von q oder von 2 genommen werden 	-->
+						</Wert>
+					</Werte>
+				</Abbildung>
+
+			<Abbildungen>
+		</Bewertung>
+	</Bewertungen>
+	
+	<Eigenschaften>
+		<Eigenschaft>
+			<Name>Strukturelle Konsistenz der ProzessStruktur</Name>
+			<Betrifft>Prozessstruktur</Betrifft>
+			<Bedingung> ... </Bedingung>
+		
+		</Eigenschaft>
+		
+	</Eigenschaften>
+	
+	<Methoden>
+	</Methoden>
+</Modell>	
+	

@@ -1,0 +1,519 @@
+/* Created on 25.09.2004 */
+
+package grapheneditor;
+
+import grapheneditor.darstellung.GraphenDarstellung;
+import grapheneditor.darstellung.GraphenDiagramm;
+import grapheneditor.darstellung.MatrizenDiagramm;
+import grapheneditor.darstellung.MengenSchreibweise;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+//import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+//import java.util.Properties;
+
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.KeyStroke;
+
+import com.sun.image.codec.jpeg.JPEGCodec;
+import com.sun.image.codec.jpeg.JPEGEncodeParam;
+import com.sun.image.codec.jpeg.JPEGImageEncoder;
+
+/**
+ *
+ * @author <a href="">Axel Klinger<a>
+ */
+public class GraphenEditor extends JFrame implements KeyListener,
+                                                     ActionListener {
+
+	/** Comment for <code>serialVersionUID</code>     */
+    private static final long serialVersionUID = 1857924299764087190L;
+    
+    GraphenModell           modell;
+	GraphenAnsichtDigital   digitalAnsicht;
+	
+    GraphenDarstellung aktuelleAnsicht;
+	GraphenDarstellung[] ansicht;
+	int ansichtIndex;
+	final static int UP = 1;
+	final static int DOWN = -1;
+	
+	
+	int index = 0;
+//	GraphenSteuerung 	  steuerung;
+	boolean digital = true;
+	int digitalBreite = 160;
+	String pfad = "";
+    String dateiname = "";
+	JPanel ansichtsFläche;
+
+	// Konstruktor
+    public GraphenEditor() {
+		super("Ein Graphen Editor");
+
+		addKeyListener(this);
+//      addActionListener(this);
+		setSize(640,480);
+        setTitle("EinGraphenEditor - <neu>");
+
+		
+		modell 	   = new GraphenModell();
+//		geomod	   = new GraphenGeometrieModell();
+		
+		ansicht    = new GraphenDarstellung[3];
+		ansicht[0] = new GraphenDiagramm(modell);
+		ansicht[1] = new MatrizenDiagramm(modell);
+		ansicht[2] = new MengenSchreibweise(modell);
+		
+		ansichtIndex = 0;
+		aktuelleAnsicht = ansicht[ansichtIndex];
+		
+		addKeyListener((GraphenDiagramm) ansicht[0]);
+		
+		digitalAnsicht = new GraphenAnsichtDigital(modell);
+//		steuerung  = new GraphenSteuerung(modell);
+		
+		setLayout(new BorderLayout());
+        
+        setJMenuBar(erzeugeMenüLeiste());
+
+        
+		ansichtsFläche = new JPanel(); //	JJPanel
+		ansichtsFläche.setLayout(new BorderLayout());
+//		JScrollPane scrollPane = new JScrollPane(aktuelleAnsicht);
+//		ansichtsFläche.add(scrollPane, BorderLayout.CENTER);
+		ansichtsFläche.add(aktuelleAnsicht);
+
+//		JPanel steuerFläche=new JPanel(); //JJPanel 
+//			   steuerFläche.add(steuerung);
+		add(ansichtsFläche, "Center");	// analogAnsicht); //	
+		add(digitalAnsicht,"East");
+    }
+    
+    public void switchAnsicht(int richtung) {
+        aktuelleAnsicht.setVisible(false);
+        //aktuelleAnsicht.removeKeyListener(aktuelleAnsicht);
+        ansichtsFläche.remove(aktuelleAnsicht);
+        
+        ansichtIndex = (ansicht.length + ansichtIndex + richtung) % ansicht.length;
+        aktuelleAnsicht = ansicht[ansichtIndex];
+        
+        //aktuelleAnsicht.addKeyListener(aktuelleAnsicht);
+        ansichtsFläche.add(aktuelleAnsicht);
+        aktuelleAnsicht.setVisible(true);
+    }
+
+    private void switchDigital() {
+	    int breite = digitalAnsicht.isVisible() ? aktuelleAnsicht.getWidth() + digitalBreite : aktuelleAnsicht.getWidth() - digitalBreite;
+	    aktuelleAnsicht.setPreferredSize(new Dimension(breite, aktuelleAnsicht.getHeight()));
+        digitalAnsicht.switchAnsicht();
+        pack();
+    }
+    
+    public JMenuBar erzeugeMenüLeiste() {
+        
+        JMenuBar menü = new JMenuBar();
+        
+        //////////////////////////////////
+        // &Datei                       //
+        // ================             //
+        // - Neu            Strg + N    //
+        // - Öffnen         Strg + O    //
+        // - Speichern      Strg + S    //
+        // - Schließen      Strg + C    //
+        // - ------------               //
+        // - Vorschau                   //
+        // - Drucken                    //
+        // - ------------               //
+        // - Eigenschaften  Alt + Return//
+        // - ------------               //
+        // - Beenden        Alt + F4    //
+        //////////////////////////////////
+        JMenu    datei = erzeugeMenü("Datei", KeyEvent.VK_D);
+        menü.add(datei);
+        
+        JMenuItem neu           = erzeugeMenüEintrag("Neu",           KeyEvent.VK_N, KeyStroke.getKeyStroke(KeyEvent.VK_N, ActionEvent.CTRL_MASK)); 
+        JMenuItem öffnen        = erzeugeMenüEintrag("Öffnen",        KeyEvent.VK_F, KeyStroke.getKeyStroke(KeyEvent.VK_O, ActionEvent.CTRL_MASK));
+        JMenuItem speichern     = erzeugeMenüEintrag("Speichern",     KeyEvent.VK_S, KeyStroke.getKeyStroke(KeyEvent.VK_S, ActionEvent.CTRL_MASK));
+        JMenuItem speichern_unter     = erzeugeMenüEintrag("Speichern unter", KeyEvent.VK_U, KeyStroke.getKeyStroke(KeyEvent.VK_U, ActionEvent.CTRL_MASK));
+//      JMenuItem schließen     = erzeugeMenüEintrag("Schließen", KeyEvent.VK_C, KeyStroke.getKeyStroke(KeyEvent.VK_C, ActionEvent.CTRL_MASK));
+        JMenuItem vorschau      = erzeugeMenüEintrag("Vorschau",      KeyEvent.VK_V, null);
+        JMenuItem drucken       = erzeugeMenüEintrag("Drucken",       KeyEvent.VK_D, KeyStroke.getKeyStroke(KeyEvent.VK_P, ActionEvent.CTRL_MASK));
+        JMenuItem importieren   = erzeugeMenüEintrag("Importieren",   KeyEvent.VK_I, null);
+        JMenuItem exportieren   = erzeugeMenüEintrag("Exportieren",   KeyEvent.VK_E,  KeyStroke.getKeyStroke(KeyEvent.VK_J, ActionEvent.CTRL_MASK));
+        JMenuItem eigenschaften = erzeugeMenüEintrag("Eigenschaften", KeyEvent.VK_E, KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, ActionEvent.ALT_MASK));
+        JMenuItem beenden       = erzeugeMenüEintrag("Beenden",       KeyEvent.VK_B, KeyStroke.getKeyStroke(KeyEvent.VK_F4, ActionEvent.ALT_MASK));
+
+        datei.add( neu          );
+        datei.add( öffnen       );
+        datei.add( speichern    );
+        datei.add( speichern_unter    );
+//      datei.add( schließen    );
+        datei.addSeparator(     );
+        datei.add( vorschau     );  vorschau.setEnabled(false);
+        datei.add( drucken      );  drucken.setEnabled(false);
+        datei.addSeparator(     );
+        datei.add( importieren  );  importieren.setEnabled(false);
+        datei.add( exportieren  );  //exportieren.setEnabled(false);
+        datei.addSeparator(     );
+        datei.add( eigenschaften);  eigenschaften.setEnabled(false);
+        datei.addSeparator(     );
+        datei.add( beenden      );
+
+        //////////////////
+        // Bearbeiten   //
+        //////////////////
+        JMenu    bearbeiten     = erzeugeMenü("Bearbeiten", KeyEvent.VK_B);
+        menü.add(bearbeiten);
+        
+        JMenuItem zurück        = erzeugeMenüEintrag("Rückgängig",      KeyEvent.VK_R, KeyStroke.getKeyStroke(KeyEvent.VK_Z, ActionEvent.CTRL_MASK));
+        JMenuItem vor           = erzeugeMenüEintrag("Wiederholen",     KeyEvent.VK_W, KeyStroke.getKeyStroke(KeyEvent.VK_Y, ActionEvent.CTRL_MASK));
+        JMenuItem ausschneiden  = erzeugeMenüEintrag("Ausschneiden",    KeyEvent.VK_N, KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.CTRL_MASK));
+        JMenuItem kopieren      = erzeugeMenüEintrag("Kopieren",        KeyEvent.VK_K, KeyStroke.getKeyStroke(KeyEvent.VK_C, ActionEvent.CTRL_MASK));
+        JMenuItem einfügen      = erzeugeMenüEintrag("Einfügen",        KeyEvent.VK_E, KeyStroke.getKeyStroke(KeyEvent.VK_V, ActionEvent.CTRL_MASK));
+        JMenuItem suchen        = erzeugeMenüEintrag("Suchen ...",      KeyEvent.VK_S, KeyStroke.getKeyStroke(KeyEvent.VK_F, ActionEvent.CTRL_MASK));
+        JMenuItem ersetzen      = erzeugeMenüEintrag("Ersetzen ...",    KeyEvent.VK_T, KeyStroke.getKeyStroke(KeyEvent.VK_H, ActionEvent.CTRL_MASK));
+        JMenuItem alle          = erzeugeMenüEintrag("Alle auswählen",  KeyEvent.VK_A, KeyStroke.getKeyStroke(KeyEvent.VK_A, ActionEvent.CTRL_MASK));
+
+        bearbeiten.add( zurück      );  zurück.setEnabled(false);
+        bearbeiten.add( vor         );  vor.setEnabled(false);
+        bearbeiten.addSeparator(    );
+        bearbeiten.add( ausschneiden);  ausschneiden.setEnabled(false);
+        bearbeiten.add( kopieren    );  kopieren.setEnabled(false);
+        bearbeiten.add( einfügen    );  einfügen.setEnabled(false);
+        bearbeiten.addSeparator(    );
+        bearbeiten.add( suchen      );  suchen.setEnabled(false);
+        bearbeiten.add( ersetzen    );  ersetzen.setEnabled(false);
+        bearbeiten.addSeparator(    );
+        bearbeiten.add( alle        );
+
+        //////////////////
+        // Ansicht      //
+        //////////////////
+        JMenu    ansicht    = erzeugeMenü("Ansicht", KeyEvent.VK_A);
+        menü.add(ansicht);
+
+        JMenuItem raster    = erzeugeMenüEintrag("v Raster",        KeyEvent.VK_R, KeyStroke.getKeyStroke(KeyEvent.VK_R, ActionEvent.CTRL_MASK));
+        JMenuItem fang      = erzeugeMenüEintrag("v Fang",          KeyEvent.VK_F, KeyStroke.getKeyStroke(KeyEvent.VK_F, ActionEvent.CTRL_MASK));
+        JMenuItem zoom      = erzeugeMenüEintrag("Zoom ...",        KeyEvent.VK_Z, null);
+
+        ansicht.add(raster);
+        ansicht.add(fang);
+        ansicht.add(zoom);      zoom.setEnabled(false);
+        
+        //////////////////
+        // ProzessModell//
+        //////////////////
+        JMenu graph = erzeugeMenü("Graph", KeyEvent.VK_G);      
+        menü.add(graph);
+
+        JMenuItem ppp = erzeugeMenüEintrag("P ...", KeyEvent.VK_P, KeyStroke.getKeyStroke(KeyEvent.VK_F1, ActionEvent.ALT_MASK));
+
+        graph.add(ppp);     ppp.setEnabled(false);
+        
+        //////////////////
+        // Fenster      //
+        //////////////////
+        
+        //////////////////
+        // Hilfe        //
+        //////////////////
+        JMenu    hilfe = erzeugeMenü("Hilfe", KeyEvent.VK_H);       
+        menü.add(hilfe);
+        
+        JMenuItem hilfeInhalt = erzeugeMenüEintrag("Hilfe ...", KeyEvent.VK_H, KeyStroke.getKeyStroke(KeyEvent.VK_F1, ActionEvent.ALT_MASK));
+        JMenuItem info        = erzeugeMenüEintrag("Info",      KeyEvent.VK_H, KeyStroke.getKeyStroke(KeyEvent.VK_F1, ActionEvent.ALT_MASK));
+
+        hilfe.add(hilfeInhalt);
+        hilfe.add(info);
+        
+        return menü;
+    }
+    
+    public JMenu erzeugeMenü(String name, int zeichen) {
+        JMenu menü = new JMenu(name);
+              menü.setMnemonic(zeichen);
+        return menü;
+    }
+    
+    public JMenuItem erzeugeMenüEintrag(String name, int zeichen, KeyStroke kombi) {
+        JMenuItem eintrag = new JMenuItem(name);
+                  if (kombi != null) eintrag.setAccelerator(kombi);
+                  eintrag.setMnemonic(zeichen);
+                  eintrag.addActionListener(this);
+        return    eintrag;
+    }
+    
+    //---------------------------
+    // Menü-Funktionen
+    //---------------------------
+    //---- Datei ----
+    private void fileNew() {
+    	modell.leeren();
+        dateiname = "";
+        setTitle("EinGraphenEditor - <neu>");
+    }
+    
+    public void load(String dateiname) {
+        modell.leeren();
+        GraphenModell tempModell = GraphenModellEinAusgabe.loadXML(dateiname);
+        for (Knoten k : tempModell.alleKnoten())
+            modell.addNode(k);
+        for (Kante k : tempModell.alleKanten())
+            modell.addEdge(k);
+    }
+    
+    private void fileOpen() {
+        JFileChooser chooser = new JFileChooser();
+        if (!pfad.equals(""))
+        	chooser.setCurrentDirectory(new File(pfad));
+        if(chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
+        	pfad = chooser.getCurrentDirectory().getPath();
+            dateiname = chooser.getSelectedFile().getName();
+            load(pfad + File.separator + dateiname);
+/*          modell.leeren();
+            GraphenModell tempModell = GraphenModellEinAusgabe.loadXML(pfad + File.separator + dateiname);
+            for (Knoten k : tempModell.alleKnoten())
+            	modell.addNode(k);
+            for (Kante k : tempModell.alleKanten())
+            	modell.addEdge(k);
+                */
+        }
+        setTitle("EinGraphenEditor - " + dateiname);
+    }
+    
+    private void fileSave() {
+        if (!pfad.equals("") && !dateiname.equals(""))
+            GraphenModellEinAusgabe.saveXML(modell, pfad + File.separator + dateiname);
+        else
+            fileSaveAs();
+        setTitle("EinGraphenEditor - " + dateiname);
+    }
+    
+    public void fileSaveAs() {
+        JFileChooser chooser = new JFileChooser();
+        if (!pfad.equals(""))
+            chooser.setCurrentDirectory(new File(pfad));
+        if(chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
+            pfad = chooser.getCurrentDirectory().getPath();
+            dateiname = chooser.getSelectedFile().getName();
+            GraphenModellEinAusgabe.saveXML(modell, pfad + File.separator + dateiname);
+        }
+        setTitle("EinGraphenEditor - " + dateiname);
+    }
+    
+//  public void fileClose() {}  // erst bei Multidocument
+    
+    public void filePreview() {}
+    
+    public void filePrint() {}
+    
+    public void fileExport() {
+        // + automatisch hochzählen
+        // ----------------------
+        // als Pixelgrafik
+        // ----------------------
+        String dateiname = "D:\\Bild1.jpg";
+//      String s = ""; // Dateiname des Graphen (ohne Endung) und der gleiche Pfad
+        // ...außerdem immer eine Kopie vom Graphen passend zum Bild mitspeichern 
+        // -> Das Bild kann als Preview im Explorer angezeigt werden.
+        // -> DoppelKlick in Word soll die Datei im Editor öffnen !!!
+        //    ... oder sogar in einer Komponente in Word ???
+        writeJPEG(dateiname, aktuelleAnsicht.getSnapshot()); // =print?
+        
+        // ----------------------
+        // als Vektorgrafik
+        // ----------------------
+        // dateiname = "D:\\Bild1.wmf";
+        // writeEMF(dateiname, aktuelleAnsicht);
+        
+/*        String dateiname2 = "D:\\Bild1.wmf";
+        Properties p = new Properties();
+//        p.setProperty("PageSize","A5");
+        VectorGraphics g = null;
+        try {
+            g = new EMFGraphics2D(new File(dateiname2), aktuelleAnsicht);
+//            g = new EMFGraphics2D(new File(dateiname2), new Dimension(1024,768));
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } 
+        if (g != null) {
+            g.setProperties(p); 
+            g.startExport(); 
+            aktuelleAnsicht.print(g); 
+            g.endExport();
+            
+            ExportDialog export = new ExportDialog();
+            export.showExportDialog( this, "Export view as ...", aktuelleAnsicht, "export" );
+
+        }
+//=======
+        writeJPEG(dateiname, aktuelleAnsicht.getSnapshot());
+        
+//        dateiname = "D:\\Bild1.emf";
+        ExportDialog export = new ExportDialog();
+        export.showExportDialog(this, "Export view as ...", aktuelleAnsicht, "export");
+        */
+    }
+    
+    public void fileProperties() {}
+
+    //---- Bearbeiten ----
+    public void editUndo() {}
+    
+    public void editRedo() {}
+    
+    public void editCut()  {}    // nur GraphenDiagramm!
+    
+    public void editCopy() {}    // nur GraphenDiagramm!
+    
+    public void editPaste() {}    // nur GraphenDiagramm!
+    
+    public void editFind() {}
+    
+    public void editReplace() {}
+    
+    public void editSelectAll() {}
+    
+    //---- Ansicht ----
+    public void viewGrid() {}   // nur GraphenDiagramm!
+    
+    public void viewSnap() {}   // nur GraphenDiagramm!
+    
+    public void viewZoom() {}
+    
+    public static void writeJPEG(String dateiname, BufferedImage bild) {
+        try {
+            ByteArrayOutputStream out = new ByteArrayOutputStream( 0xfff );
+            JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder( out );
+            JPEGEncodeParam param;
+            param = encoder.getDefaultJPEGEncodeParam( bild );
+            param.setQuality( 1.0f, true );
+            encoder.encode( bild, param );
+
+            FileOutputStream fos = new FileOutputStream(dateiname);
+            fos.write( out.toByteArray() );
+            fos.close();
+            out.close();
+        } catch (Exception e) { e.printStackTrace();    }   
+    }
+
+
+    
+    //--------------------
+    // Tastaturbelegung
+    //--------------------
+    public void keyPressed(KeyEvent e) {
+        switch (e.getKeyCode()) {	
+        	case KeyEvent.VK_PLUS:	
+        	    if (e.isControlDown())
+        	    	switchAnsicht(UP);
+        	    else
+        	        aktuelleAnsicht.switchModus(UP);
+        	    break;
+        	case KeyEvent.VK_MINUS:	
+        	    if (e.isControlDown())
+        	    	switchAnsicht(DOWN);
+        	    else
+        	        aktuelleAnsicht.switchModus(DOWN);
+        	    break;
+        	case KeyEvent.VK_RIGHT:	switchAnsicht(UP);		break;
+        	case KeyEvent.VK_LEFT:	switchAnsicht(DOWN);	break;
+        	case KeyEvent.VK_UP:	aktuelleAnsicht.switchModus(UP);	break;
+        	case KeyEvent.VK_DOWN:	aktuelleAnsicht.switchModus(DOWN);	break;
+//        	case KeyEvent.VK_N:		newFile();				break;
+//        	case KeyEvent.VK_O:		openFile();				break;
+            case KeyEvent.VK_M:     getJMenuBar().setVisible(!getJMenuBar().isVisible());   break;
+//        	case KeyEvent.VK_S:		saveFile();				break;
+            case KeyEvent.VK_D:     switchDigital();        break;
+        }
+    }
+    
+    public void keyReleased(KeyEvent e) {    }
+    
+    public void keyTyped(KeyEvent e) {    }
+
+    // Das Programm
+    public static void main(String[] args) {
+
+//	    try {
+//	        UIManager.setLookAndFeel( UIManager.getSystemLookAndFeelClassName() );
+//	    } catch (Exception e) {	e.printStackTrace();	}
+        
+		GraphenEditor editor = new GraphenEditor();
+
+        if (args.length > 0) {
+            editor.load(args[0]);
+        }
+
+        editor.addWindowListener(new WindowAdapter() {
+				public void windowClosing(WindowEvent e){ System.exit(0); }		}); 
+		editor.pack();
+		editor.setLocationByPlatform(true);
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize(); 
+        int posx = screenSize.width/2 - 320;
+        int posy = screenSize.height/2 - 240;
+        editor.setLocation(posx, posy);
+        editor.setSize(640,480);
+		editor.setVisible(true);
+    }
+
+    /* (non-Javadoc)
+     * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+     */
+    public void actionPerformed(ActionEvent e) {
+        JMenuItem source = (JMenuItem)(e.getSource());
+        String text = source.getText();
+        
+        // Datei
+             if (text.equals("Neu"))             fileNew();
+        else if (text.equals("Öffnen"))          fileOpen();
+        else if (text.equals("Speichern"))       fileSave();
+        else if (text.equals("Speichern unter")) fileSaveAs();
+//      else if (text.equals("Schließen"))       fileClose();
+        else if (text.equals("Seitenansicht"))   filePreview();
+        else if (text.equals("Drucken"))         filePrint();
+        else if (text.equals("Exportieren"))     fileExport();
+        else if (text.equals("Eigenschaften"))   fileProperties();
+        else if (text.equals("Beenden"))         System.exit(0);
+
+        // Bearbeiten
+        else if (text.equals("Rückgängig"))      editUndo();
+        else if (text.equals("Wiederholen"))     editRedo();
+        else if (text.equals("Ausschneiden"))    editCut();
+        else if (text.equals("Kopieren"))        editCopy();
+        else if (text.equals("Einfügen"))        editPaste();
+        else if (text.equals("Suchen ..."))      editFind();
+        else if (text.equals("Ersetzen ..."))    editReplace();
+        else if (text.equals("Alle auswählen"))  editSelectAll();
+
+        // Ansicht
+        else if (text.equals("Raster"))         viewGrid();
+        else if (text.equals("Fang"))           viewSnap();
+        else if (text.equals("Zoom"))           viewZoom();
+
+        // Hilfe
+//      else if (text.equals("Hilfe"))           help();
+//      else if (text.equals("Info"))            info();
+
+        //        if (text.equals("Öffnen"))  openFile();
+        
+    }
+}

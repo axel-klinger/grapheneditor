@@ -1,0 +1,75 @@
+<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+	</HEAD>
+	<BODY>
+		<P><B>Strukturen</B> <I>(engl. structures)</I>: Mit Strukturen können gleichartige 
+		Elemente zusammengefasst werden. Eine Struktur kann eine Ordnung für die Elemente
+		besitzen (z.B. Folge, Baum, ...) oder die Elemente ungeordnet verwalten (Menge).</P>
+		
+		<H2>Menge</H2>
+
+		<H2>Liste</H2>
+		<H2>Stapel</H2>
+		<H2>Schlange</H2>
+	</BODY>
+</HTML>
+<!-- 
+
+Zu behandelnde Strukturen u.ä
+	
+--- bis Sommer ---
+
+für die Lehre
+
+	Menge			OK
+	Relation	OK
+	Graph			OK
+	Baum			OK							// unter informatik.strukturen.graphen, diese und folgende klassen auf graph aufbauend!
+	Liste			-> Folge	OK		// unter informatik.strukturen, diese, Baum und folgende klassen auf Geschwindigkeit aufbauen. ABER immer die gleiche Schnittstelle!!!
+	Stapel		OK							// ext i.s.g.Liste gestrichen
+	Schlange	OK
+	BiGraph		OK
+
+für die DFG
+
+	HGraph
+	HBiGraph
+
+	Methoden/Tools wie Dijkstra usw.
+
+	WF
+	PN
+	NP
+---  ---
+	Prozessmodell
+	Organisationsstruktur
+	Gebäudestruktur
+	Prozessstruktur
+
+	Komponenten
+	Verbindungen
+	Planungsverzeichnisse
+	Aufgaben
+
+	Varianten
+	Alternativen
+	Versionen
+	Nachträge
+
+	Aktivitäten
+	Transitionen
+
+	Akteure
+	Gruppen
+	Rollen
+---  ---
+
+	Fuzzy-Logik
+	Merkmallogik
+	
+	Sprache über Automaten
+	alle Automaten
+
+
+-->

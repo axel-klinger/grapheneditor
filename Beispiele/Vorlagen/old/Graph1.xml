@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Graph1.xml -->
+<Graph name="Ein kleines Beispiel">
+	<KnotenMenge klasse="...">
+		<Knoten id="1" x="100" y="100"/>
+		<Knoten id="2" x="300" y="100"/>
+		<Knoten id="3" x="200" y="300"/>
+	</KnotenMenge>
+	<KantenMenge klasse1="..." klasse2="...">
+		<Kante id1="1" id2="2"/>
+		<Kante id1="2" id2="3"/>
+		<Kante id1="3" id2="1"/>
+	</KantenMenge>
+</Graph>

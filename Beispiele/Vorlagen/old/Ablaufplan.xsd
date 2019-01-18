@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+
+<!-- 	Mengen: 		Aktivitäten A (Rechtecke), Zustände Z (Kreise), Wurzel W (Dreieck)
+		Relationen:		A-Z, Z-A, AUZ-AUZUW
+		Eigenschaften:	...
+		Methoden:		...
+		
+		
+Definition: GraphenModell
+==========================
+
+<Modell>
+	<Name>Prozess</Name>
+	<Typ>BipartiterGraph</Typ>
+	<Mengen>
+		<Menge>
+			<Name>Aktivitäten</Name>
+			<Kurzform>A</Kurzform>
+			<Symbol>Quadrat</Symbol>
+			<Typ>Aktivität</Typ>
+		</Menge>
+		<Menge>
+			<Name>Zustände</Name>
+			...
+		</Menge>
+	</Mengen>
+	<Relationen>
+		<Relation>
+			<Anfang>Aktivitäten</Anfang>
+			<Ende>Zustände</Ende>
+			<Totalität></Totalität>
+			<Eindeutigkeit></Eindeutigkeit>
+		</Relation>
+	</Relationen>
+	<Eigenschaften>
+		<Eigenschaft>
+			<Name>Konsistenz</Name>
+			<Typ>Boolean</Typ>
+	<!--	<Zustände>
+				<Zustand>ist konsistent</Zustand>
+				<Zustand>ist nicht konsistent</Zustand>
+			</Zustände>	-->
+			<Regel>wahr WENN azyklisch UND schwach zusammenhängend</Regel>
+	<!-- az <Regel>wahr WENN NICHT enthält Zyklen</Regel>	
+		 ez <Regel>wahr WENN FÜR EINEN knoten TIEFENSUCHBAUM DES knoten ENTHÄLT knoten (2*?)		
+		</Eigenschaft>
+		<Eigenschaft>
+			<Name>Symmetrie<
+
+Instanz des GraphenModells
+===========================
+
+<Prozess>
+	<Aktivitäten>
+		<Aktivität>	<!-- ab hier gemäß Klassendefinition -->
+			...
+		</Aktivität>
+	
+
+
+Definition: Knotentyp
+======================
+<Klasse>
+	<Name>Aktivität</Name>
+	<Eigenschaften>
+		<Eigenschaft>
+			<Name>Dauer</Name>
+			<Typ>Zeit</Typ>
+		</Eigenschaft>
+		<Eigenschaft>
+			<Name>Bezeichnung</Name>
+			<Typ>Zeichenkette</Typ>
+
+Instanz des Knotentyps
+=======================
+<Aktivität>
+	<Bezeichnung>a1</Bezeichnung>
+	<Dauer>00:30:00</Dauer>
+</Aktivität>
+		
+		 -->
+
+</xs:schema>

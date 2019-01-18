@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<Modell>
+	<Name>ProzessModell</Name>
+	<Beschreibung>Ein ProzessModell ...</Beschreibung>
+	<Typ>BipartiterGraph</Typ>
+	<Mengen>
+		<Menge>
+			<Name>Aktivitäten</Name>
+			<Kurzform>A</Kurzform>
+			<Symbol>Quadrat</Symbol>
+			<Typ>Aktivität</Typ>
+		</Menge>
+		<Menge>
+			<Name>Zustände</Name>
+			<Kurzform>Z</Kurzform>
+			<Symbol>Kreis</Symbol>
+			<Typ>Zustand</Typ>
+		</Menge>
+		<Menge>
+			<Name>Personen</Name>
+			<Kurzform>P</Kurzform>
+			<Symbol>Fünfeck</Symbol>
+			<Typ>Person</Typ>
+		</Menge>
+	</Mengen>
+	<Relationen>
+		<Relation>
+			<Anfang>Aktivitäten</Anfang>
+			<Ende>Zustände</Ende>
+			<Totalität></Totalität>
+			<Eindeutigkeit></Eindeutigkeit>
+		</Relation>
+		<Relation>
+			<Anfang>Zustände</Anfang>
+			<Ende>Aktivitäten</Ende>
+			<Totalität></Totalität>
+			<Eindeutigkeit></Eindeutigkeit>
+		</Relation>
+		<Relation>
+			<Anfang>Aktivitäten</Anfang>
+			<Ende>Personen</Ende>
+			<Totalität>linkstotal</Totalität>
+			<Eindeutigkeit>rechtseindeutig</Eindeutigkeit>
+		</Relation>
+
+	</Relationen>
+	<Eigenschaften>
+		<Eigenschaft>
+			<Name>Konsistenz</Name>
+			<Typ>Boolean</Typ>
+	<!--	<Zustände>
+				<Zustand>ist konsistent</Zustand>
+				<Zustand>ist nicht konsistent</Zustand>
+			</Zustände>
+			<Regel>wahr WENN azyklisch UND istSchwachZusammenhängend</Regel>
+		 az <Regel>wahr WENN NICHT enthält Zyklen</Regel>	
+		 ez <Regel>wahr WENN FÜR EINEN knoten TIEFENSUCHBAUM DES knoten ENTHÄLT knoten (2*?)	-->
+		</Eigenschaft>
+		<Eigenschaft>
+			<Name>Symmetrie</Name>
+			<Typ>Boolean</Typ>
+		</Eigenschaft>
+	</Eigenschaften>
+	<Methoden>
+	</Methoden>
+</Modell>
+			

@@ -1,0 +1,104 @@
+<!--	Welche Struktur ist besser geeignet ???	-->
+
+<!--	1. Allgemein	
+			Vorteile:
+				+	xsl -> svg anwendbar, da zu transformierende Objekte einheitlich benannt sind
+
+			Nachteile
+				- wie beschreibt man in xsd Knotenmengen vom Typ Object ???
+			-->
+			
+<!--	Als Text:
+		
+		Verkehrsnetz
+			Verkehrsknoten
+				vk1  ja  nein 100 100
+				vk2 nein nein 100 200
+				vk3 nein nein 200 100
+			Straßenabschnitte
+				sa1 Nienburger_Straße 100 150 
+				sa2 Nienburger_Straße 150 150
+			Verkehrsknoten-Schtraßenabschnitte
+				vk1 sa1
+				vk2 sa2
+			Straßenabschnitte-Verkehrsknoten
+				sa1 vk2
+				sa2 vk3	-->
+<GraphenModell typ="Verkehrsnetz">
+	<Name> Verkehrsnetz Hannover-Nordstadt </Name>
+	<Beschreibung> Das Verkehrsnetz der Nordstadt von Hannover zwischen 
+		Herrenhäuser Kirchweg - Haltenhoffstraße - Engelbosteler Damm - Nienburger Straße
+	</Beschreibung>
+	<Graph>
+		<KnotenMenge name="Verkehrsknoten">
+			<Knoten id="vk1">
+				<Inhalt>
+					<Ampel> ja </Ampel>
+					<FGÜberweg> nein </FGÜberweg>
+				</Inhalt>
+				<Position>
+					<x> 100 </x>
+					<y> 100 </y>
+				</Position>
+			</Knoten>
+			<Knoten id="vk2">
+				<Inhalt>
+					<Ampel> nein </Ampel>
+					<FGÜberweg> nein </FGÜberweg>
+				</Inhalt>
+				<Position>
+					<x> 100 </x>
+					<y> 200 </y>
+				</Position>
+				<Geometrie>
+					<Form> Sechseck </Form>
+					<Farbe> Dunktelrot </Farbe>
+					<Breite> 40 </Breite>
+					<Höhe>   40 </Höhe>
+				</Geometrie>
+			</Knoten>
+			<Knoten id="vk3">
+				<Inhalt>
+					<Ampel> nein </Ampel>
+					<FGÜberweg> nein </FGÜberweg>
+				</Inhalt>
+				<Position>
+					<x> 200 </x>
+					<y> 100 </y>
+				</Position>
+			</Knoten>
+		</KnotenMenge>
+		<KnotenMenge name="Straßenabschnitte">
+			<Knoten id="sa1">
+				<Inhalt>
+					<Straße> Nienburger Straße </Straße>
+					<VMax> 50</VMax>
+				</Inhalt>
+				<Position>
+					<x> 100 </x>
+					<y> 150 </y>
+				</Position>
+			</Knoten>
+			<Knoten id="sa2">
+				<Inhalt>
+					<Straße> Nienburger Straße </Straße>
+					<VMax> 50</VMax>
+				</Inhalt>
+				<Position>
+					<x> 150 </x>
+					<y> 150 </y>
+				</Position>
+			</Knoten>
+		</KnotenMenge>
+		<Relation von="Verkehrsknoten" nach="Straßenabschnitte">
+			<Kante von="vk1" nach="sa1"/>
+			<Kante von="vk2" nach="sa2"/>
+		</Relation>
+		<Relation von="Straßenabschnitte" nach="Verkehrsknoten">
+			<Kante von="sa1" nach="vk2"/>
+			<Kante von="sa2" nach="vk3"/>
+		</Relation>
+	<!--<Hierarchie>
+		</Hierarchie>-->
+	</Graph>
+</GraphenModell>

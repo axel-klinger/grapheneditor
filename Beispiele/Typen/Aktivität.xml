@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<!-- Typdefinition -->
+<Klasse>
+	<Name>Aktivität</Name>
+	<Beschreibung>Ein elementarer Arbeitsschritt in einem Prozess</Beschreibung>
+	<Attribut name="ID" typ="String" />
+	<Attribut name="Name" typ="String" />
+	<Attribut name="Dauer" typ="java.util.Date" />
+</Klasse>
+
+<!-- Ein Datensatz
+<Aktivität ID="001">
+	<Name>Einschalen</Name>
+	<Dauer>2 Tage</Dauer>
+</Aktivität> -->

@@ -1,0 +1,33 @@
+<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+	</HEAD>
+	<BODY>
+		<H2>Graphen Beispiele</H2>
+		<UL>
+			<LI>Verkehrsnetze
+			<LI>Ablaufpläne
+			<LI>Versorgungsleitungen
+			<LI>...
+		</UL>
+
+		<H2>Graphen Aufgaben</H2>
+		<UL>
+			<LI>Strukturanalyse (existenz und Ermittlung von Untergraphen (Wegen!?)) s. graphen.struktur
+			<LI>Extremalaufgaben (minimale oder maximale Eigenschaften von Untergraphen) s. graphen.wege und graphen.flüsse
+			<LI>Färbung von Graphen (s. <A HREF="http://de.wikipedia.org/wiki/F%E4rbung_von_Graphen">Färbung</A>)
+		</UL>
+
+
+		Das Paket enthält Klassen für <B>Graphen</B>. Es umfasst schlichte Graphen, ...
+		<H3>Schlichter Graph</H3>
+		Ein schlichter Graph beschreibt die Beziehungen zwischen den Elementen einer Menge.<br>
+		<CENTER><IMG SRC="imagesGraph/Graph.png" BORDER=0 ALT="schlichter Graph"></CENTER>
+		<H3>Gewichteter Graph</H3>
+		Ein Gewichteter Graph erweitert einen schlichten Graph um eine Bewertung für die Knoten und Kanten.<br>
+		<CENTER><IMG SRC="imagesGraph/Gewichtet.png" BORDER=0 ALT="gewichteter Graph"></CENTER>
+		<H3>Bipartiter Graph</H3>
+		<CENTER><IMG SRC="imagesGraph/Bipartit.png" BORDER=0 ALT="bipartiter Graph"></CENTER>
+		<H2>...</H2>
+	</BODY>
+</HTML>

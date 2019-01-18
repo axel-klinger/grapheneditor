@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jardesc>
+<jar path="D:/klinger/Zertifikat/gelight.jar"/>
+<options buildIfNeeded="true" compress="true" descriptionLocation="/GraphenEditor/gelight.jardesc" exportErrors="true" exportWarnings="true" overwrite="false" saveDescription="true" useSourceFolders="false"/>
+<manifest generateManifest="true" mainClassHandleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenEditor.java[GraphenEditor" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+<sealing sealJar="false">
+<packagesToSeal/>
+<packagesToUnSeal/>
+</sealing>
+</manifest>
+<selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen.hilfsmittel{BoolscheMatrix.java"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen.hilfsmittel{GraphenEigenschaften.java"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen.hilfsmittel{GraphAnsicht.java"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen.hilfsmittel{GraphenEinAusgabe.java"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen"/>
+<javaElement handleIdentifier="=GraphenEditor/src"/>
+</selectedElements>
+</jardesc>

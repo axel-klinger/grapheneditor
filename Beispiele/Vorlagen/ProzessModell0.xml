@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<Modell>
+	<Name>Prozessmodell</Name>
+	<Mengen>
+		<Menge>
+			<Name>Aktivitäten</Name>
+			<Typ>Aktivität</Typ>
+		</Menge>
+		<Menge>
+			<Name>Zustände</Name>
+			<Typ>Zustand</Typ>
+		</Menge>
+		<Menge>
+			<Name>Personen</Name>
+			<Typ>Person</Typ>
+		</Menge>
+	</Mengen>
+	<Relationen>
+		<Relation>
+			<Von>Aktivitäten</Von>
+			<Aussage>führen zu</Aussage>
+			<Nach>Zustände</Nach>
+		</Relation>
+		<Relation>
+			<Von>Zustände</Von>
+			<Aussage>ermöglichen</Aussage>
+			<Nach>Aktivitäten</Nach>
+		</Relation>
+		<Relation>
+			<Von>Aktivitäten</Von>
+			<Aussage>werden ausgeführt von</Aussage>
+			<Nach>Personen</Nach>
+		</Relation>
+	</Relationen>
+</Modell>	

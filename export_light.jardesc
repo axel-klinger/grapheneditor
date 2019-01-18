@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jardesc>
+<jar path="D:/klinger/GraphenEditorLight.jar"/>
+<options buildIfNeeded="true" compress="true" descriptionLocation="/GraphenEditor/export_light.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" useSourceFolders="false"/>
+<manifest generateManifest="true" mainClassHandleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenEditorLight.java[GraphenEditorLight" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+<sealing sealJar="false">
+<packagesToSeal/>
+<packagesToUnSeal/>
+</sealing>
+</manifest>
+<selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+<file path="/GraphenEditor/src/grapheneditor/messagesDE.properties"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{Messages.java"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.hilfsmittel"/>
+<file path="/GraphenEditor/src/grapheneditor/messagesEN.properties"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenEditorLight.java"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen.hilfsmittel"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenModell.java"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{KnotenMenge.java"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{AllgemeinesGraphenModell.java"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenModellAuswahl.java"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.steuerung"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenModellEinAusgabe.java"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.dialoge"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.typen"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenVorlage.java"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{Kante.java"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.darstellung"/>
+<file path="/GraphenEditor/src/grapheneditor/.#GraphenEditor.java.1.12"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{GraphenVorlageEinAusgabe.java"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen.graphen.wege"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{NpartitesGraphenModell.java"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{KantenRelation.java"/>
+<file path="/GraphenEditor/src/grapheneditor/.#GraphenEditor.java.1.14"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor{Knoten.java"/>
+<javaElement handleIdentifier="=Schule/src&lt;informatik.strukturen"/>
+<javaElement handleIdentifier="=GraphenEditor/src&lt;grapheneditor.darstellung.figuren"/>
+</selectedElements>
+</jardesc>

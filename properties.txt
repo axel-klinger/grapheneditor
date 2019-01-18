@@ -1,0 +1,9 @@
+#Einstellungen für den GraphenEditor
+#Fri Jan 18 11:44:05 CET 2019
+Beschriftung=true
+Raster=false
+Fang=false
+SchriftGr\u00F6\u00DFe=14
+KnotenGr\u00F6\u00DFe=25
+ArbeitsVerzeichnis=/Users/axelklinger/eclipse-workspace-2019/GraphenEditor/Beispiele/Graphen
+VorlagenVerzeichnis=Beispiele\\Vorlagen

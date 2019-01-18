@@ -1,6 +1,8 @@
 # GraphenEditor
 
-Einfacher Editor für die Darstellung und Analyse von Graphen.
+Einfacher Editor fÃ¼r die Darstellung und Analyse von Graphen.
+
+![Beispiel](Beispiele/Hintergrund/screen.jpg)
 
 Anforderung JDK 1.5+
 
@@ -16,28 +18,28 @@ Anforderung JDK 1.5+
 	D   Struktureigenschaften
 	E   Kantendisjunkte Wege (a,b)
 	F   Fang
-	I   Füllfarbe wählen (auswahl)
-	L   Linienfarbe wählen (auswahl)
+	I   FÃ¼llfarbe wÃ¤hlen (auswahl)
+	L   Linienfarbe wÃ¤hlen (auswahl)
 	N   Knotendisjunkte Wege (a,b)
 	T   Topologisch sortieren
 	P   Pseudostrenge Zusammenhangskomponenten
 	R   Ansicht Raster
 	X   Ansicht Schatten
-	RECHTS  Nächste Ansicht
+	RECHTS  NÃ¤chste Ansicht
 	LINKS   Letzte Ansicht
-	HOCH    Nächster Modus
+	HOCH    NÃ¤chster Modus
 	RUNTER  Letzter Modus
-	ESCAPE  Farben zurücksetzen\n
+	ESCAPE  Farben zurÃ¼cksetzen\n
 	
 	Strg + N   Neuer Graph
-	Strg + O   Graph öffnen
+	Strg + O   Graph Ã¶ffnen
 	Strg + S   Graph speichern
 	Strg + U   Graph speichern unter ...
 	Strg + G   Graph als SVG exportieren
 	Strg + X   Graph als JPG exportieren
 	Strg + H   Hintergrundbild laden\n
 	
-	Alt + RUNTER Ansicht zurück
+	Alt + RUNTER Ansicht zurÃ¼ck
 	Alt + HOCH   Ansicht vor
 	Alt + H      Hintergrundbild anzeigen
 	Alt + F4     GraphenEditor beenden

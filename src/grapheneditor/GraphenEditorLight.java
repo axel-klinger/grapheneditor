@@ -266,8 +266,16 @@ public class GraphenEditorLight extends JFrame
 
 				case VK_C:	steuerung.schwacheKomponenten();		break;
 				case VK_T:	steuerung.topologischSortieren();			break;
-//				case VK_E:	steuerung.kantenDisjunkteWege();		break;
-//				case VK_N:	steuerung.knotenDisjunkteWege();		break;
+				case VK_E:	
+					if (((GraphenDiagrammInteraktiv)ansicht[0]).anfrageStart != null && ((GraphenDiagrammInteraktiv)ansicht[0]).anfrageZiel != null) {
+						steuerung.kantenDisjunkteWege(((GraphenDiagrammInteraktiv)ansicht[0]).anfrageStart.getObjekt(), ((GraphenDiagrammInteraktiv)ansicht[0]).anfrageZiel.getObjekt());		
+					}
+					break;
+				case VK_N:	
+					if (((GraphenDiagrammInteraktiv)ansicht[0]).anfrageStart != null && ((GraphenDiagrammInteraktiv)ansicht[0]).anfrageZiel != null) {
+						steuerung.knotenDisjunkteWege(((GraphenDiagrammInteraktiv)ansicht[0]).anfrageStart.getObjekt(), ((GraphenDiagrammInteraktiv)ansicht[0]).anfrageZiel.getObjekt());		
+					}
+					break;
 				case VK_RIGHT:		viewSwitch(UP);	break;
 				case VK_LEFT:	viewSwitch(DOWN);	break;
 				case VK_UP:		aktuelleAnsicht.switchModus(UP);	break;

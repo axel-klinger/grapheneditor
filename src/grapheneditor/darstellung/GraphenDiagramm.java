@@ -28,8 +28,8 @@ public class GraphenDiagramm extends GraphenDarstellung {
     private static int anzahl = 0;  // -> nur beim Speichern und laden !!!
     
     // Globale Hilfsvariablen
-    protected KnotenAnsicht anfrageStart;
-    protected KnotenAnsicht anfrageZiel;
+    public KnotenAnsicht anfrageStart;
+    public KnotenAnsicht anfrageZiel;
     
     protected SchlichterGraph<KnotenElement> ergebnisGraph;
     protected Weg ergebnisWeg;

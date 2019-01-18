@@ -1,1 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?><GraphenModell><KnotenMenge id="km01"><Knoten id="1"><Object><Titel/><Inhalt>K8</Inhalt></Object><Position x="675.0" y="125.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="2"><Object><Titel>START</Titel><Inhalt>K0</Inhalt></Object><Position x="75.0" y="125.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="3"><Object><Titel>Genehmigung</Titel><Inhalt>K7</Inhalt></Object><Position x="600.0" y="125.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="4"><Object><Titel>...</Titel><Inhalt>K9</Inhalt></Object><Position x="750.0" y="125.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="5"><Object><Titel>Grundlagen</Titel><Inhalt>K1</Inhalt></Object><Position x="150.0" y="125.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="6"><Object><Titel/><Inhalt>K2</Inhalt></Object><Position x="225.0" y="125.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="7"><Object><Titel/><Inhalt>K4</Inhalt></Object><Position x="375.0" y="125.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="8"><Object><Titel>ENDE</Titel><Inhalt>K10</Inhalt></Object><Position x="825.0" y="125.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="9"><Object><Titel>Vorplanung</Titel><Inhalt>K5</Inhalt></Object><Position x="450.0" y="125.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="10"><Object><Titel>Entwurf</Titel><Inhalt>K3</Inhalt></Object><Position x="300.0" y="125.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="11"><Object><Titel/><Inhalt>K6</Inhalt></Object><Position x="525.0" y="125.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten></KnotenMenge><KantenMenge id1="km01" id2="km01"><Kante k1="5" k2="6"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="4" k2="8"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="10" k2="7"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="3" k2="1"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="11" k2="3"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="6" k2="10"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="7" k2="9"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="2" k2="5"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="1" k2="4"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="9" k2="11"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante></KantenMenge></GraphenModell>
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphenModell>
+  <KnotenMenge id="km01">
+    <Knoten id="1">
+      <Object>
+        <Titel/>
+        <Inhalt>K8</Inhalt>
+      </Object>
+      <Position x="675.0" y="125.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="2">
+      <Object>
+        <Titel>START</Titel>
+        <Inhalt>K0</Inhalt>
+      </Object>
+      <Position x="75.0" y="125.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="3">
+      <Object>
+        <Titel>Genehmigung</Titel>
+        <Inhalt>K7</Inhalt>
+      </Object>
+      <Position x="600.0" y="125.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="4">
+      <Object>
+        <Titel>...</Titel>
+        <Inhalt>K9</Inhalt>
+      </Object>
+      <Position x="750.0" y="125.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="5">
+      <Object>
+        <Titel>Grundlagen</Titel>
+        <Inhalt>K1</Inhalt>
+      </Object>
+      <Position x="150.0" y="125.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="6">
+      <Object>
+        <Titel/>
+        <Inhalt>K2</Inhalt>
+      </Object>
+      <Position x="225.0" y="125.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="7">
+      <Object>
+        <Titel/>
+        <Inhalt>K4</Inhalt>
+      </Object>
+      <Position x="375.0" y="125.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="8">
+      <Object>
+        <Titel>ENDE</Titel>
+        <Inhalt>K10</Inhalt>
+      </Object>
+      <Position x="825.0" y="125.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="9">
+      <Object>
+        <Titel>Vorplanung</Titel>
+        <Inhalt>K5</Inhalt>
+      </Object>
+      <Position x="450.0" y="125.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="10">
+      <Object>
+        <Titel>Entwurf</Titel>
+        <Inhalt>K3</Inhalt>
+      </Object>
+      <Position x="300.0" y="125.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="11">
+      <Object>
+        <Titel/>
+        <Inhalt>K6</Inhalt>
+      </Object>
+      <Position x="525.0" y="125.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+  </KnotenMenge>
+  <KantenMenge id1="km01" id2="km01">
+    <Kante k1="5" k2="6">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="4" k2="8">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="10" k2="7">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="3" k2="1">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="11" k2="3">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="6" k2="10">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="7" k2="9">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="2" k2="5">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="1" k2="4">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="9" k2="11">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+  </KantenMenge>
+</GraphenModell>

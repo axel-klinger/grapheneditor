@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?><GraphenModell><KnotenMenge id="km01"><Knoten id="1"><Object><Titel>Verwalten</Titel><Inhalt>K3</Inhalt></Object><Position x="325.0" y="225.0"/><Form b="32" h="26" typ="Sechseck"/><Farbe füllung="-16724992" linie="-16777216"/></Knoten><Knoten id="2"><Object><Titel>Bauen</Titel><Inhalt>K1</Inhalt></Object><Position x="250.0" y="150.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="-256" linie="-16777216"/></Knoten><Knoten id="3"><Object><Titel>Planen</Titel><Inhalt>K0</Inhalt></Object><Position x="175.0" y="225.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="-16777012" linie="-16777216"/></Knoten><Knoten id="4"><Object><Titel>Zerstören</Titel><Inhalt>K2</Inhalt></Object><Position x="250.0" y="300.0"/><Form b="32" h="27" typ="Dreieck"/><Farbe füllung="-65536" linie="-16777216"/></Knoten></KnotenMenge><KantenMenge id1="km01" id2="km01"><Kante k1="2" k2="1"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="1" k2="4"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="3" k2="2"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="4" k2="3"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante></KantenMenge></GraphenModell>
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphenModell>
+  <KnotenMenge id="km01">
+    <Knoten id="1">
+      <Object>
+        <Titel>Verwalten</Titel>
+        <Inhalt>K3</Inhalt>
+      </Object>
+      <Position x="325.0" y="225.0"/>
+      <Form b="32" h="26" typ="Sechseck"/>
+      <Farbe füllung="-16724992" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="2">
+      <Object>
+        <Titel>Bauen</Titel>
+        <Inhalt>K1</Inhalt>
+      </Object>
+      <Position x="250.0" y="150.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="-256" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="3">
+      <Object>
+        <Titel>Planen</Titel>
+        <Inhalt>K0</Inhalt>
+      </Object>
+      <Position x="175.0" y="225.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="-16777012" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="4">
+      <Object>
+        <Titel>Zerstören</Titel>
+        <Inhalt>K2</Inhalt>
+      </Object>
+      <Position x="250.0" y="300.0"/>
+      <Form b="32" h="27" typ="Dreieck"/>
+      <Farbe füllung="-65536" linie="-16777216"/>
+    </Knoten>
+  </KnotenMenge>
+  <KantenMenge id1="km01" id2="km01">
+    <Kante k1="2" k2="1">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="1" k2="4">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="3" k2="2">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="4" k2="3">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+  </KantenMenge>
+</GraphenModell>

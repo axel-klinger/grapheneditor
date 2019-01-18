@@ -1,1 +1,408 @@
-<?xml version="1.0" encoding="UTF-8"?><GraphenModell><KnotenMenge id="km01"><Knoten id="1"><Object><Titel/><Inhalt>K26</Inhalt></Object><Position x="350.0" y="450.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="2"><Object><Titel>K21</Titel><Inhalt>K21</Inhalt></Object><Position x="125.0" y="400.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="3"><Object><Titel/><Inhalt>K22</Inhalt></Object><Position x="200.0" y="400.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="4"><Object><Titel/><Inhalt>K6</Inhalt></Object><Position x="500.0" y="50.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="-6750208" linie="-16777216"/></Knoten><Knoten id="5"><Object><Titel/><Inhalt>K0</Inhalt></Object><Position x="50.0" y="50.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="-16738048" linie="-16777216"/></Knoten><Knoten id="6"><Object><Titel/><Inhalt>K24</Inhalt></Object><Position x="350.0" y="400.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="7"><Object><Titel/><Inhalt>K28</Inhalt></Object><Position x="500.0" y="450.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="-6750208" linie="-16777216"/></Knoten><Knoten id="8"><Object><Titel/><Inhalt>K2</Inhalt></Object><Position x="200.0" y="50.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="9"><Object><Titel/><Inhalt>K20</Inhalt></Object><Position x="50.0" y="400.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="-16738048" linie="-16777216"/></Knoten><Knoten id="10"><Object><Titel/><Inhalt>K16</Inhalt></Object><Position x="500.0" y="175.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="-6750208" linie="-16777216"/></Knoten><Knoten id="11"><Object><Titel>Grundlagenermittlung</Titel><Inhalt>K1</Inhalt></Object><Position x="125.0" y="50.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="12"><Object><Titel/><Inhalt>K9</Inhalt></Object><Position x="200.0" y="125.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="13"><Object><Titel/><Inhalt>K17</Inhalt></Object><Position x="175.0" y="300.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="14"><Object><Titel>Zusammenfassung</Titel><Inhalt>K13</Inhalt></Object><Position x="425.0" y="175.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="15"><Object><Titel>K25</Titel><Inhalt>K25</Inhalt></Object><Position x="425.0" y="400.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="16"><Object><Titel>Vorplanung</Titel><Inhalt>K3</Inhalt></Object><Position x="275.0" y="50.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="17"><Object><Titel/><Inhalt>K7</Inhalt></Object><Position x="50.0" y="175.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="-16738048" linie="-16777216"/></Knoten><Knoten id="18"><Object><Titel>Entscheidungshilfen</Titel><Inhalt>K11</Inhalt></Object><Position x="275.0" y="225.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="19"><Object><Titel>K23</Titel><Inhalt>K23</Inhalt></Object><Position x="275.0" y="400.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="20"><Object><Titel>Aufgabenstellung</Titel><Inhalt>K8</Inhalt></Object><Position x="125.0" y="175.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="21"><Object><Titel/><Inhalt>K14</Inhalt></Object><Position x="350.0" y="225.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="22"><Object><Titel/><Inhalt>K15</Inhalt></Object><Position x="200.0" y="225.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="23"><Object><Titel/><Inhalt>K19</Inhalt></Object><Position x="375.0" y="300.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="24"><Object><Titel>Standortanalyse</Titel><Inhalt>K18</Inhalt></Object><Position x="275.0" y="300.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="25"><Object><Titel>Leistungsbedarf</Titel><Inhalt>K10</Inhalt></Object><Position x="275.0" y="125.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="26"><Object><Titel/><Inhalt>K12</Inhalt></Object><Position x="350.0" y="125.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="27"><Object><Titel/><Inhalt>K4</Inhalt></Object><Position x="350.0" y="50.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="28"><Object><Titel>K27</Titel><Inhalt>K27</Inhalt></Object><Position x="425.0" y="450.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="29"><Object><Titel>Entwurfsplanung</Titel><Inhalt>K5</Inhalt></Object><Position x="425.0" y="50.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten></KnotenMenge><KantenMenge id1="km01" id2="km01"><Kante k1="11" k2="8"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="21" k2="14"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="9" k2="2"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="18" k2="11"><Form b="10" h="15" typ="1"/><Farbe füllung="-6710887" linie="-6710887"/></Kante><Kante k1="19" k2="6"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="25" k2="11"><Form b="10" h="15" typ="1"/><Farbe füllung="-6710887" linie="-6710887"/></Kante><Kante k1="13" k2="24"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="25" k2="26"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="22" k2="18"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="17" k2="20"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="14" k2="11"><Form b="10" h="15" typ="1"/><Farbe füllung="-6710887" linie="-6710887"/></Kante><Kante k1="20" k2="22"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="14" k2="10"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="8" k2="16"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="1" k2="28"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="24" k2="23"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="10" k2="8"><Form b="10" h="15" typ="1"/><Farbe füllung="-6710887" linie="-6710887"/></Kante><Kante k1="2" k2="3"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="24" k2="11"><Form b="10" h="15" typ="1"/><Farbe füllung="-6710887" linie="-6710887"/></Kante><Kante k1="20" k2="13"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="16" k2="27"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="12" k2="25"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="5" k2="11"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="29" k2="4"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="6" k2="15"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="18" k2="21"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="26" k2="14"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="28" k2="7"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="15" k2="1"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="3" k2="19"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="27" k2="29"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="17" k2="5"><Form b="10" h="15" typ="1"/><Farbe füllung="-6710887" linie="-6710887"/></Kante><Kante k1="20" k2="12"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="20" k2="11"><Form b="10" h="15" typ="1"/><Farbe füllung="-6710887" linie="-6710887"/></Kante><Kante k1="23" k2="14"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante></KantenMenge></GraphenModell>
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphenModell>
+  <KnotenMenge id="km01">
+    <Knoten id="1">
+      <Object>
+        <Titel/>
+        <Inhalt>K26</Inhalt>
+      </Object>
+      <Position x="350.0" y="450.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="2">
+      <Object>
+        <Titel>K21</Titel>
+        <Inhalt>K21</Inhalt>
+      </Object>
+      <Position x="125.0" y="400.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="3">
+      <Object>
+        <Titel/>
+        <Inhalt>K22</Inhalt>
+      </Object>
+      <Position x="200.0" y="400.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="4">
+      <Object>
+        <Titel/>
+        <Inhalt>K6</Inhalt>
+      </Object>
+      <Position x="500.0" y="50.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="-6750208" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="5">
+      <Object>
+        <Titel/>
+        <Inhalt>K0</Inhalt>
+      </Object>
+      <Position x="50.0" y="50.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="-16738048" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="6">
+      <Object>
+        <Titel/>
+        <Inhalt>K24</Inhalt>
+      </Object>
+      <Position x="350.0" y="400.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="7">
+      <Object>
+        <Titel/>
+        <Inhalt>K28</Inhalt>
+      </Object>
+      <Position x="500.0" y="450.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="-6750208" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="8">
+      <Object>
+        <Titel/>
+        <Inhalt>K2</Inhalt>
+      </Object>
+      <Position x="200.0" y="50.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="9">
+      <Object>
+        <Titel/>
+        <Inhalt>K20</Inhalt>
+      </Object>
+      <Position x="50.0" y="400.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="-16738048" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="10">
+      <Object>
+        <Titel/>
+        <Inhalt>K16</Inhalt>
+      </Object>
+      <Position x="500.0" y="175.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="-6750208" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="11">
+      <Object>
+        <Titel>Grundlagenermittlung</Titel>
+        <Inhalt>K1</Inhalt>
+      </Object>
+      <Position x="125.0" y="50.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="12">
+      <Object>
+        <Titel/>
+        <Inhalt>K9</Inhalt>
+      </Object>
+      <Position x="200.0" y="125.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="13">
+      <Object>
+        <Titel/>
+        <Inhalt>K17</Inhalt>
+      </Object>
+      <Position x="175.0" y="300.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="14">
+      <Object>
+        <Titel>Zusammenfassung</Titel>
+        <Inhalt>K13</Inhalt>
+      </Object>
+      <Position x="425.0" y="175.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="15">
+      <Object>
+        <Titel>K25</Titel>
+        <Inhalt>K25</Inhalt>
+      </Object>
+      <Position x="425.0" y="400.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="16">
+      <Object>
+        <Titel>Vorplanung</Titel>
+        <Inhalt>K3</Inhalt>
+      </Object>
+      <Position x="275.0" y="50.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="17">
+      <Object>
+        <Titel/>
+        <Inhalt>K7</Inhalt>
+      </Object>
+      <Position x="50.0" y="175.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="-16738048" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="18">
+      <Object>
+        <Titel>Entscheidungshilfen</Titel>
+        <Inhalt>K11</Inhalt>
+      </Object>
+      <Position x="275.0" y="225.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="19">
+      <Object>
+        <Titel>K23</Titel>
+        <Inhalt>K23</Inhalt>
+      </Object>
+      <Position x="275.0" y="400.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="20">
+      <Object>
+        <Titel>Aufgabenstellung</Titel>
+        <Inhalt>K8</Inhalt>
+      </Object>
+      <Position x="125.0" y="175.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="21">
+      <Object>
+        <Titel/>
+        <Inhalt>K14</Inhalt>
+      </Object>
+      <Position x="350.0" y="225.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="22">
+      <Object>
+        <Titel/>
+        <Inhalt>K15</Inhalt>
+      </Object>
+      <Position x="200.0" y="225.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="23">
+      <Object>
+        <Titel/>
+        <Inhalt>K19</Inhalt>
+      </Object>
+      <Position x="375.0" y="300.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="24">
+      <Object>
+        <Titel>Standortanalyse</Titel>
+        <Inhalt>K18</Inhalt>
+      </Object>
+      <Position x="275.0" y="300.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="25">
+      <Object>
+        <Titel>Leistungsbedarf</Titel>
+        <Inhalt>K10</Inhalt>
+      </Object>
+      <Position x="275.0" y="125.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="26">
+      <Object>
+        <Titel/>
+        <Inhalt>K12</Inhalt>
+      </Object>
+      <Position x="350.0" y="125.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="27">
+      <Object>
+        <Titel/>
+        <Inhalt>K4</Inhalt>
+      </Object>
+      <Position x="350.0" y="50.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="28">
+      <Object>
+        <Titel>K27</Titel>
+        <Inhalt>K27</Inhalt>
+      </Object>
+      <Position x="425.0" y="450.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="29">
+      <Object>
+        <Titel>Entwurfsplanung</Titel>
+        <Inhalt>K5</Inhalt>
+      </Object>
+      <Position x="425.0" y="50.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+  </KnotenMenge>
+  <KantenMenge id1="km01" id2="km01">
+    <Kante k1="11" k2="8">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="21" k2="14">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="9" k2="2">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="18" k2="11">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-6710887" linie="-6710887"/>
+    </Kante>
+    <Kante k1="19" k2="6">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="25" k2="11">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-6710887" linie="-6710887"/>
+    </Kante>
+    <Kante k1="13" k2="24">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="25" k2="26">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="22" k2="18">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="17" k2="20">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="14" k2="11">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-6710887" linie="-6710887"/>
+    </Kante>
+    <Kante k1="20" k2="22">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="14" k2="10">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="8" k2="16">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="1" k2="28">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="24" k2="23">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="10" k2="8">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-6710887" linie="-6710887"/>
+    </Kante>
+    <Kante k1="2" k2="3">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="24" k2="11">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-6710887" linie="-6710887"/>
+    </Kante>
+    <Kante k1="20" k2="13">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="16" k2="27">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="12" k2="25">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="5" k2="11">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="29" k2="4">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="6" k2="15">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="18" k2="21">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="26" k2="14">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="28" k2="7">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="15" k2="1">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="3" k2="19">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="27" k2="29">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="17" k2="5">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-6710887" linie="-6710887"/>
+    </Kante>
+    <Kante k1="20" k2="12">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="20" k2="11">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-6710887" linie="-6710887"/>
+    </Kante>
+    <Kante k1="23" k2="14">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+  </KantenMenge>
+</GraphenModell>

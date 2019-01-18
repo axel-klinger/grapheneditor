@@ -1,1 +1,112 @@
-<?xml version="1.0" encoding="UTF-8"?><GraphenModell><KnotenMenge id="km01"><Knoten id="1"><Object><Titel>T3</Titel><Inhalt>K5</Inhalt></Object><Position x="382.0" y="220.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="2"><Object><Titel>Activity</Titel><Inhalt>K6</Inhalt></Object><Position x="100.0" y="275.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="3"><Object><Titel>A3</Titel><Inhalt>K2</Inhalt></Object><Position x="175.0" y="149.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="4"><Object><Titel>Imposible!</Titel><Inhalt>K8</Inhalt></Object><Position x="136.0" y="110.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-1"/></Knoten><Knoten id="5"><Object><Titel>Transition</Titel><Inhalt>K7</Inhalt></Object><Position x="175.0" y="275.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="6"><Object><Titel>A2</Titel><Inhalt>K1</Inhalt></Object><Position x="174.0" y="65.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="7"><Object><Titel>A1</Titel><Inhalt>K0</Inhalt></Object><Position x="92.0" y="111.0"/><Form b="24" h="24" typ="Rechteck"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="8"><Object><Titel>T1</Titel><Inhalt>K4</Inhalt></Object><Position x="314.0" y="169.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten><Knoten id="9"><Object><Titel>T2</Titel><Inhalt>K3</Inhalt></Object><Position x="365.0" y="113.0"/><Form b="25" h="25" typ="Ellipse"/><Farbe füllung="null" linie="-16777216"/></Knoten></KnotenMenge><KantenMenge id1="km01" id2="km01"><Kante k1="2" k2="5"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="9" k2="3"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="5" k2="2"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="6" k2="9"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante><Kante k1="6" k2="7"><Form b="10" h="15" typ="1"/><Farbe füllung="-65536" linie="-65536"/></Kante><Kante k1="3" k2="8"><Form b="10" h="15" typ="1"/><Farbe füllung="-16777216" linie="-16777216"/></Kante></KantenMenge></GraphenModell>
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphenModell>
+  <KnotenMenge id="km01">
+    <Knoten id="1">
+      <Object>
+        <Titel>T3</Titel>
+        <Inhalt>K5</Inhalt>
+      </Object>
+      <Position x="382.0" y="220.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="2">
+      <Object>
+        <Titel>Activity</Titel>
+        <Inhalt>K6</Inhalt>
+      </Object>
+      <Position x="100.0" y="275.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="3">
+      <Object>
+        <Titel>A3</Titel>
+        <Inhalt>K2</Inhalt>
+      </Object>
+      <Position x="175.0" y="149.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="4">
+      <Object>
+        <Titel>Imposible!</Titel>
+        <Inhalt>K8</Inhalt>
+      </Object>
+      <Position x="136.0" y="110.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-1"/>
+    </Knoten>
+    <Knoten id="5">
+      <Object>
+        <Titel>Transition</Titel>
+        <Inhalt>K7</Inhalt>
+      </Object>
+      <Position x="175.0" y="275.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="6">
+      <Object>
+        <Titel>A2</Titel>
+        <Inhalt>K1</Inhalt>
+      </Object>
+      <Position x="174.0" y="65.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="7">
+      <Object>
+        <Titel>A1</Titel>
+        <Inhalt>K0</Inhalt>
+      </Object>
+      <Position x="92.0" y="111.0"/>
+      <Form b="24" h="24" typ="Rechteck"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="8">
+      <Object>
+        <Titel>T1</Titel>
+        <Inhalt>K4</Inhalt>
+      </Object>
+      <Position x="314.0" y="169.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+    <Knoten id="9">
+      <Object>
+        <Titel>T2</Titel>
+        <Inhalt>K3</Inhalt>
+      </Object>
+      <Position x="365.0" y="113.0"/>
+      <Form b="25" h="25" typ="Ellipse"/>
+      <Farbe füllung="null" linie="-16777216"/>
+    </Knoten>
+  </KnotenMenge>
+  <KantenMenge id1="km01" id2="km01">
+    <Kante k1="2" k2="5">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="9" k2="3">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="5" k2="2">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="6" k2="9">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+    <Kante k1="6" k2="7">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-65536" linie="-65536"/>
+    </Kante>
+    <Kante k1="3" k2="8">
+      <Form b="10" h="15" typ="1"/>
+      <Farbe füllung="-16777216" linie="-16777216"/>
+    </Kante>
+  </KantenMenge>
+</GraphenModell>

@@ -272,8 +272,8 @@ public class GraphenEditorLight extends JFrame
 				case VK_LEFT:	viewSwitch(DOWN);	break;
 				case VK_UP:		aktuelleAnsicht.switchModus(UP);	break;
 				case VK_DOWN:	aktuelleAnsicht.switchModus(DOWN);	break;
-//				case VK_ESCAPE:	steuerung.FarbenZurücksetzen();	
-//								aktuelleAnsicht.repaint();	break;
+				case VK_ESCAPE:	steuerung.FarbenZurücksetzen();	
+								aktuelleAnsicht.repaint();	break;
 			}
 		}
 		aktuelleAnsicht.repaint();

@@ -121,7 +121,7 @@ public class GraphenMethoden {
     // ==== Knoten und Kanten farbig markieren ====
     
     
-	private void FarbenZurücksetzen() {
+	public void FarbenZurücksetzen() {
     	for (KnotenAnsicht k: modell.knotenMenge.values()) {
     		k.füllFarbe = Color.WHITE;
     		k.linienFarbe = Color.BLACK;
